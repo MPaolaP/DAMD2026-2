@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#0D0D0D"
+    android:padding="16dp"
+    android:layout_marginTop="100dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XO Arena"
+        android:textColor="#00CC66"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:letterSpacing="0.1"/>
+
+    <TableLayout
+        android:id="@+id/play_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/one"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+            <Button android:id="@+id/two"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+            <Button android:id="@+id/three"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/four"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+            <Button android:id="@+id/five"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+            <Button android:id="@+id/six"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/seven"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+            <Button android:id="@+id/eight"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+            <Button android:id="@+id/nine"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="4dp"
+                android:textSize="60sp"
+                android:background="@drawable/button_background"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Mensaje de estado -->
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Marcador -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp">
+
+        <TextView android:id="@+id/human_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/human_score"
+            android:textColor="#00CC66"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="6dp"/>
+
+        <TextView android:id="@+id/tie_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tie_score"
+            android:textColor="#FFCC00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="6dp"/>
+
+        <TextView android:id="@+id/android_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/android_score"
+            android:textColor="#FF4444"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+    <!-- Botón New Game -->
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/new_game"
+        android:textColor="#0D0D0D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#00CC66"/>
+
+</LinearLayout>
